@@ -1,0 +1,454 @@
+body {
+    margin-bottom: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #40A2E3;
+}
+
+.login-logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 0;
+
+}
+
+.judul-aplikasi {
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    line-height: 3px;
+}
+
+.judul1 {
+    font-size: 34px;
+}
+
+.judul2 {
+    font-size: 38px;
+}
+
+.login {
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    background-color: white;
+}
+
+.input-login {
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.label-login {
+    text-align: left;
+    display: flex;
+    padding-left: 30px;
+}
+
+.button-login {
+    height: 35px;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #40A2E3;
+    
+    border-color: #40A2E3;
+    color: white;
+    box-shadow: 3px 3px 10px black;
+}
+
+.judul {
+    letter-spacing: 3px;
+    margin: 30px;
+}
+
+.button-login:hover {
+    transform: scale(1.03);
+}
+
+.judul:hover {
+    color: #40A2E3;
+}
+
+.input-login:hover {
+    background-color: rgb(253, 253, 253);
+}
+
+.header {
+    background-color: #40A2E3;
+    color: white;
+    /* width: 100%; */
+    height: 100px;
+    padding: 0px 30px 0px 30px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.header img {
+    z-index: 99999;
+    width: 30px;
+    height: auto;
+}
+
+
+.container-total {
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #B1B1B1;
+    box-shadow: 3px 3px 10px #B1B1B1;
+    padding: 10px 30px 10px 30px;
+    margin-top: 150px;
+
+}
+
+.jumlah-total {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.container-result {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #B1B1B1;
+    box-shadow: 3px 3px 10px #B1B1B1;
+    padding: 10px 30px 10px 30px;
+}
+
+.keterangan {
+    color: black;
+    padding: 3px 0px 3px 0px;
+}
+
+.jumlah {
+    font-weight: bold;
+    padding: 3px 0px 3px 0px;
+}
+
+.tanggal {
+    padding: 3px 0px 3px 0px;
+    color: #40a2e3;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+
+}
+
+.kosong {
+    text-align: center;
+}
+
+.menu a {
+    color: #B1B1B1;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #40a2e3;
+    text-decoration: 2px #40A2E3 underline;
+}
+
+.menu a.active,
+.menu a.active:hover {
+    text-decoration: 2px #40A2E3 underline;
+    color: #40a2e3;
+}
+.container-jumlah{
+    position: fixed;
+    bottom: 90px;
+    left: 25px;
+    right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #B1B1B1;
+    box-shadow: 3px 3px 10px #B1B1B1;
+    padding: 10px 30px 10px 30px;
+    height: 30px;
+    background-color: white;
+    z-index: 999;
+
+}
+
+
+.tambah {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+.tambah a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #40a2e3;
+    padding: 10px;
+}
+
+.tambah a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+.hapus-semua {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    height: 50px;
+    max-width: 90%;
+    width: 100%;
+    background-color: #40a2e3;
+    border-radius: 50px;
+    margin: 0px 30px 0px 30px;
+}
+
+.hapus-semua a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.delete {
+    position: relative
+}
+
+.delete img {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.header-input {
+    background-color: #40A2E3;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.header-input img {
+    width: 30px;
+    padding: 20px;
+}
+
+.tambah-data {
+    text-align: left;
+    margin: 0px 30px 0px 30px;
+}
+
+.container-data {
+    margin-bottom: 30px;
+}
+
+.input-data {
+    outline: none;
+    width: 100%;
+    border-style: none;
+    border-bottom: 2px solid #B1B1B1;
+    height: 30px;
+}
+
+
+.simpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #40A2E3;
+    border-radius: 30px;
+    color: white;
+    border-color: #40A2E3;
+}
+
+.tabel-akun {
+    border-top: 1px solid #B1B1B1;
+    border-bottom: 1px solid #B1B1B1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+
+}
+
+.tabel-akun input {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border-bottom: 1px solid #B1B1B1;
+    border-style: none;
+    background-color: #EEEEEE;
+
+}
+
+.daftar-nis {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    outline: none;
+
+}
+
+.form-tambah {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid #B1B1B1;
+    border-bottom: 1px solid #B1B1B1;
+}
+
+.form-tambah label {
+    max-width: 100%;
+
+}
+
+.form-tambah input {
+    max-width: 100%;
+    width: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border-style: none;
+}
+
+.container-tombol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombol-akun {
+    background-color: #6C22A6;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    width: 70px;
+    height: 30px;
+    margin: 3px;
+    text-align: center;
+}
+
+.tombol-akun input {
+    background-color: #6C22A6;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px 5px 10px;
+    width: 70px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin: 3px;
+}
+
+.tombol-akun a {
+    margin: 3px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/* table { */
+    /* width: 100%; /* Lebar tabel memenuhi ukuran layar 
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 20px;
+} */
+
+/* th {
+    padding: 10px 30px 10px 30px;
+
+    width: 50%; /* Lebar tiap kolom setengah dari lebar layar 
+    text-align: left; /* Posisi teks pada kolom 
+}
+
+th:last-child 
+    text-align: right; /* Posisi teks pada kolom pertama 
+}
+/* th:second-child{
+    text-align: right;
+}  */ 
